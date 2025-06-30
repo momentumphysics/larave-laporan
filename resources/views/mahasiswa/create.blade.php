@@ -12,6 +12,9 @@
 
         <label>NIM:</label><br>
         <input type="text" name="nim"><br><br>
+        
+        <label>Jurusan:</label><br>
+        <input type="text" name="jurusan"><br><br>
 
         <button type="submit">Simpan</button>
     </form>

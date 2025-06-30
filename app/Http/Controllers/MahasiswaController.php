@@ -18,11 +18,12 @@ class MahasiswaController extends Controller
     {
         $request->validate([
             'nama' => 'required',
-            'nim' => 'required'
+            'nim' => 'required',
+            'jurusan' => 'required'
         ]);
 
         Mahasiswa::create($request->all());
-        return redirect('/mahasiswa');
+        return redirect('/mahasiswa')->with('success', 'Mahasiswa berhasil ditambahkan!');
     }
     
     public function index()
